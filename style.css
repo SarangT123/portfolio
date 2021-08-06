@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
-
+html {
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
@@ -81,6 +83,14 @@
   margin-top: 0px;
   color: coral;
 }
+.heading2 {
+  width: 100%;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 100%;
+  text-align: center;
+  margin-top: 0px;
+  color: coral;
+}
 
 .btn {
   width: 60%;
@@ -152,6 +162,7 @@
   align-items: center;
   padding: 0.5rem;
   margin-bottom: 0.5rem;
+  transition: all 0.5s ease;
 }
 
 .skill-title h3 {
@@ -160,17 +171,65 @@
 }
 .img {
   text-decoration: none;
-  color: rgb(255, 0, 0);
-  transition: all 0.5s ease;
 }
 
-.img:hover {
+.skill-title:hover {
   background-color: rgba(255, 113, 113, 0.692);
   color: rgb(255, 0, 0);
   box-shadow: 0 0 10px rgb(255, 169, 169);
-  border-radius: 30%;
+  border-radius: 20%;
 }
 
 .skills3 {
   font-size: 200%;
+}
+.skill-icon {
+  width: 20rem;
+  height: 20rem;
+}
+
+/* Responsive */
+@media screen and (max-width: 1300px) {
+  .skill-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1rem;
+    padding: 1rem 80px;
+    font-size: 1.2rem;
+    background-color: rgb(44, 44, 44);
+  }
+}
+
+@media screen and (max-width: 851px) {
+  .skill-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1rem;
+    padding: 1rem 80px;
+    font-size: 1.2rem;
+    background-color: rgb(44, 44, 44);
+  }
+  .skill-icon {
+    width: 10rem;
+    height: 10rem;
+  }
+  /* about me */
+  .me p {
+    text-align: center;
+    font-size: 100%;
+  }
+
+  /* home */
+  .heading {
+    font-size: 160%;
+  }
+  .heading2 {
+    font-size: 80%;
+  }
 }
