@@ -148,6 +148,9 @@ html {
   text-align: center;
   font-size: 150%;
 }
+.lifeline{
+  color: #00fffb;
+}
 
 /* Skills */
 .skills {
