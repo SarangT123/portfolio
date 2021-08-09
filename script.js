@@ -73,3 +73,15 @@ function Delete() {
 
 // Start the typing effect on load
 _INTERVAL_VAL = setInterval(Type, 100);
+
+
+// Submitting 
+const form = document.querySelector('form')
+form.addEventListener('submit', event => {
+  // submit event detected
+	event.preventDefault()
+	var name = document.getElementById("fname").value;
+	var email = document.getElementById("email").value;
+	var message = document.getElementById("subject").value;
+	location.replace('https://Portfolio-backend.c3tmlive.repl.co/'+name+'/'+email+'/'+message)
+})
